@@ -17,6 +17,16 @@ A backend REST API for managing products, customers, and orders — built with L
 
 ## API Endpoints
 
+### Authentication (public)
+
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/register` | Create an account, returns a Sanctum token |
+| POST | `/api/login` | Log in, returns a Sanctum token |
+| POST | `/api/logout` | Revoke the current token (requires auth) |
+
+All routes below require an `Authorization: Bearer <token>` header.
+
 | Method | Endpoint | Description |
 |---|---|---|
 | GET | `/api/products` | List all products |
