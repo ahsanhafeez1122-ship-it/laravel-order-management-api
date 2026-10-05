@@ -1,5 +1,7 @@
 # Laravel Order Management REST API
 
+![Tests](https://github.com/ahsanhafeez1122-ship-it/laravel-order-management-api/actions/workflows/tests.yml/badge.svg)
+
 A backend REST API for managing products, customers, and orders — built with Laravel and MySQL.
 
 ## Features
@@ -52,6 +54,14 @@ curl -X POST http://127.0.0.1:8000/api/orders \
       { "product_id": 1, "quantity": 3 }
     ]
   }'
+```
+
+## Testing
+
+Feature tests cover authentication, product listing, order creation (including the total calculation and validation), run automatically on every push via GitHub Actions.
+
+```bash
+php artisan test
 ```
 
 ## Setup
