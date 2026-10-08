@@ -9,3 +9,6 @@
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
+
+# Show the repo as PHP on GitHub: the default Laravel welcome page is Blade/HTML and outweighs the API code.
+*.blade.php linguist-detectable=false
